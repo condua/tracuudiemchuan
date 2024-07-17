@@ -1,38 +1,196 @@
-.App {
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table th:first-child,
+.table td:first-child {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  /* Set the background color for the first column (adjust as needed) */
+}
+
+.table th,
+.table td {
+  text-align: center;
+  white-space: nowrap;
+}
+
+div {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.result {
+  text-indent: 5%;
+  color: red;
+  font-weight: 500;
+  position: relative;
+  margin-top: 2%;
+}
+
+.logo {
+  /* Add your desired styles for the logo */
+  width: 100px;
+  /* Adjust the width as needed */
+  height: 74;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Maintain aspect ratio */
+}
+
+header {
+  height: 150px;
+  position: relative;
+}
+
+footer {
+  height: 80px;
+  position: relative;
+  margin-top: 0%;
+  width: 100%;
+  text-align: center;
+  font-size: medium;
+  font-weight: 500;
+}
+
+#formId {
+  align-items: center;
+}
+
+#score_button {
+  align-items: center;
+}
+
+#text_ketqua {
+  position: relative;
+  top: 10px;
+  text-align: left;
+  font-size: larger;
+}
+
+#table_ketqua {
+  position: relative;
+  top: 20px;
+}
+
+#rank_khoi {
+  position: relative;
+  margin-top: 10px
+}
+
+#text_header {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  font-size: larger;
+}
+
+a {
+  text-decoration: "none";
+}
+
+sup {
+  vertical-align: super;
+  /* Sử dụng thuộc tính vertical-align để đặt số mũ */
+  font-size: 0.7em;
+}
+
+.info {
+  text-decoration: none;
+}
+
+#compare_score {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#container_compare {
+  position: relative;
+  top: 0%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#noti {
+  position: relative;
+  text-align: center;
+  margin-top: 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 820px) {
+  header {
+    height: 150px;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  #text_header {
+    position: relative;
+    top: 75%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 19px;
+  }
+
+  footer {
+    height: 80px;
+    position: relative;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 500;
+  }
+
+  .result {
+    text-indent: 5%;
+    color: red;
+    font-weight: 500;
+    position: relative;
+    margin-top: 12%;
+  }
+
+  .enter_sbd {
+    margin-top: 10%;
+    width: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button-submit{
+  background-color: rgb(0, 17, 255);
+  border: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.button-submit:hover{
+  background-color: white;
+  color: rgb(0, 17, 255);
+  border: 1px solid black;
+  transition-duration: 1s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result-table{
+  width: 97%;
+  padding: 10px;
 }
+
+.table-ketquathi{
+  border: 1px solid black;
+  width: 100%;
+}
+tbody{
+  width: 100%;
+}
+tr{
+  width: 100%;
+  display: flex;
+  
+}
+td{
+  width: 50%;
+}
+
